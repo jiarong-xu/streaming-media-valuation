@@ -1,92 +1,107 @@
 # Streaming Media Valuation
 
-**Jiarong Xu**
+**Jiarong Xu | Financial Statement Analysis · Financial Modeling · DCF Valuation**
 
-Financial modeling and valuation of streaming and media businesses, with completed Paramount, Netflix and Warner Bros. Discovery analyses.
+How does the transition to streaming translate into cash generation and shareholder value?
 
-This project studies how the transition to streaming affects traditional media businesses' operating performance, cash generation and valuation. Its intended scope covers Netflix, Paramount and Warner Bros. Discovery (WBD). The three standalone models and reports for **Paramount, Netflix and Warner Bros. Discovery (WBD)** are complete. The final cross-company comparison remains to be completed.
+This project examines **Paramount, Netflix and Warner Bros. Discovery (WBD)** through historical financial analysis, business-driver forecasts and discounted cash flow valuation. Netflix provides a streaming-focused benchmark; Paramount and WBD combine streaming growth with film production and declining legacy television businesses.
 
-## Start Here
+Each analysis connects a business question to an Excel model and a written explanation of its assumptions, formulas, results and limitations. The three company models and reports are complete. A final cross-company synthesis remains in development.
 
-| File | Contents |
-| --- | --- |
-| [Paramount valuation model](models/Paramount_Valuation.xlsx) | Historical inputs, segment forecasts, NOPAT, net operating assets, FCFF, DCF, operating scenarios and sensitivity analysis. |
-| [Paramount analysis report](report/Paramount_Analysis_Report.md) | Business interpretation, assumptions, formulas, valuation results, limitations and input references. |
-| [Netflix valuation model](models/Netflix_Valuation.xlsx) | Regional revenue drivers, operating forecast, NOA-based FCFF, DCF and sensitivity analysis. |
-| [Netflix valuation report](report/Netflix_Valuation_Report.md) | Accounting basis, assumptions, formulas, results and input references. |
-| [WBD valuation model](models/WBD_Valuation.xlsx) | Segment forecasts, SBC, EBITDA-linked investment, FCFF, DCF and scenario sensitivities. |
-| [WBD valuation report](report/WBD_Valuation_Report.md) | Period definitions, assumptions, formulas, financial claims and method limitations. |
+## Explore the Project
 
-Download an Excel model and open **Summary** first. For Paramount, **Business History** presents reported operating data and revenue reconciliations. **Assumptions** contains the operating paths. **Sensitivity** contains the model controls and native Excel What-If Data Tables. Those tables may require automatic calculation or manual recalculation after inputs change.
+| Company | Central question | Excel model | Analysis report |
+| --- | --- | --- | --- |
+| Paramount | Can DTC growth offset legacy TV contraction while funding operating investment? | [Download model](models/Paramount_Valuation.xlsx) | [Read report](report/Paramount_Analysis_Report.md) |
+| Netflix | How do regional membership, monetization and operating leverage translate into free cash flow? | [Download model](models/Netflix_Valuation.xlsx) | [Read report](report/Netflix_Valuation_Report.md) |
+| Warner Bros. Discovery | Can Streaming and Studios offset Networks decline after investment and financial claims? | [Download model](models/WBD_Valuation.xlsx) | [Read report](report/WBD_Valuation_Report.md) |
 
-## Paramount: Scope and Results
+Start with a report for the analytical narrative, or download an Excel model and open **Summary** for its main inputs and outputs.
 
-The completed Paramount component organizes historical data, forecasts revenue for DTC, TV Media and Filmed Entertainment, estimates operating profit and NOPAT, projects net operating assets, and derives FCFF and discounted cash flow value. Operating scenarios and sensitivity analysis examine how business performance, investment assumptions and discount rates affect the result.
+## Valuation Scope and Results
 
-This is a **retrospective analysis with a 31 December 2025 valuation baseline**, using disclosed FY2025 data and historical LSEG / Refinitiv Workspace inputs from March 2026. It does not claim that all information was available at the valuation baseline. Explicit forecasts cover **2026–2030**, with a normalized stable period beginning in **2031**.
+All three models use a **31 December 2025 retrospective baseline**, five explicit forecast years **2026–2030**, and a stable period beginning in **2031**. They use subsequently published FY2025 disclosures and archived March 2026 LSEG / Refinitiv Workspace inputs. They therefore do not reconstruct decisions using only information available at year-end 2025.
 
-| Default input or result | Value |
-| --- | ---: |
-| Base illustrative value per period-end share | **$16.94** |
-| Bull operating case | $23.53 |
-| Bear operating case | $9.76 |
-| WACC | 6.5636% |
-| Perpetual growth | 0.5% |
-| Forecast tax proxy | 16.2176% |
-| Operating value | $30,260.47 million |
-| Equity reference after book-value NCI deduction | $18,774.47 million |
-| Period-end shares | 1,108 million |
+| Default assumption or result | Paramount | Netflix | WBD |
+| --- | ---: | ---: | ---: |
+| WACC | 6.5636% | 9.8412% | 8.1842% |
+| Perpetual growth rate | 0.5% | 2.5% | 2.0% |
+| **Base value per share** | **$16.94** | **$45.32** | **$3.33** |
+| Bull operating case | $23.53 | $52.84 | $5.07 |
+| Bear operating case | $9.76 | $32.46 | $4.03 |
+| Terminal value / Base operating value | 87.7% | 74.5% | 66.4% |
 
-The default uses reconciled external segment revenue, the Base operating case and historical-average operating investment ratios. Bull and Bear change revenue paths and SG&A assumptions while holding WACC, terminal growth, tax and the selected investment method constant. These are analyst scenarios, not probabilities or management guidance.
+Per-share estimates are in USD; financial schedules generally use USD millions. Each company's operating scenarios hold its stated WACC and perpetual growth rate fixed. Company-specific assumptions and accounting definitions remain distinct: these outputs are not a harmonized ranking, and nominal share prices do not measure relative cheapness. Netflix uses the model's split-adjusted share basis.
 
-## Paramount: Method and Key Assumptions
+The estimates depend on simplified investment, financial-claim and dilution assumptions. They are historical analytical references, rather than current price targets or trading recommendations. Subsequent transaction consideration, financing and unmodelled synergies are outside scope.
 
-- **Operating forecast:** Segment revenue growth assumptions feed revenue-based cost estimates and SG&A. Consolidated historical costs are allocated by revenue share under disclosure limitations. These allocations do not represent independently disclosed segment costs or observed segment margin differences.
-- **Taxes:** Forecast NOPAT uses the arithmetic mean of 2020–2024 effective tax rates, approximately 16.2176%. This proxy excludes the abnormal 2025 ETR and is not a statutory rate or a complete cash-tax forecast.
-- **Operating investment:** The default estimates operating assets and operating liabilities from their 2020–2025 average annual ratios to revenue. Net operating assets equal operating assets less operating liabilities. FCFF equals NOPAT less the change in net operating assets, without appending a separate depreciation add-back and capex deduction to the same net-investment estimate.
-- **Discounting:** WACC is the historical 6.5636% LSEG / Refinitiv Workspace snapshot attributed to PSKY.O on 5 March 2026, rather than a newly measured end-2025 rate. All five explicit forecast cash flows are discounted to end-2025. Terminal value uses normalized 2031 FCFF and 0.5% perpetual growth, measured at end-2030 and discounted five years.
-- **Equity bridge:** The model adds included financial assets, deducts included debt and deducts $1,194 million of non-controlling interests using 2025 book value as a claim-value proxy. The resulting equity reference is divided by period-end shares.
+## Company Analyses
 
-Terminal value contributes approximately **87.7%** of operating value. Results are sensitive to terminal assumptions and the operating asset/liability ratios used to estimate reinvestment. The workbook also examines holding 2025 investment ratios and transitioning gradually to historical averages. Acquisition accounting and the split between 2025 Predecessor and Successor periods limit historical comparability. The financial-claim bridge and dilution treatment remain simplified, and subsequent acquisitions, financing and unmodelled synergies are excluded. The per-share results are assumption-dependent historical illustrations, not a current investment recommendation.
+### Paramount
 
-## Paramount: Data Sources
+**Question.** Can growth in direct-to-consumer revenue compensate for television decline and support cash flow after the required operating investment?
 
-The [report's input references](report/Paramount_Analysis_Report.md#input-references) identify source definitions, dates and printed pages. Sources include Paramount Skydance's FY2025 Form 10-K, the original LSEG / Refinitiv Workspace historical exports dated 4 March 2026, the separately attributed WACC snapshot dated 5 March 2026, and the cited Damodaran FCFF and stable-growth framework. The workbook retains source-export worksheets for traceability.
+**Approach.** Forecast DTC, TV Media and Filmed Entertainment separately, apply revenue-based cost estimates, estimate after-tax operating profit and project operating assets and liabilities from revenue. The default investment assumptions use historical-average ratios. The workbook also examines holding 2025 ratios and transitioning gradually toward the historical averages.
 
-The 2025 reported-period revenue sum and supplemental pro forma revenue have different accounting scopes. The forecast uses reconciled external segment revenue totaling $28,891 million, as explained in the report.
+**Interpretation.** The Base reference is **$16.94 per share** after the included debt and book-value non-controlling-interest deductions. The default investment method implies a substantial first-year asset rebuild and negative 2026 FCFF, making the investment assumption particularly consequential.
 
-## Netflix
+**Accounting considerations.** The August 2025 transaction splits FY2025 into Predecessor and Successor periods. Their revenue sum of **$28,891 million** is distinct from supplemental pro forma revenue of **$29,394 million**. Forecast segment bases reconcile to external consolidated revenue. Historical consolidated costs are allocated by revenue share under disclosure constraints; those allocations are not independently disclosed segment costs. The forecast tax proxy remains **16.2176%**.
 
-Netflix is the streaming-focused benchmark in this project. The analysis forecasts regional revenue from membership and monetization estimates, then estimates operating profit, taxes, net operating investment and FCFF.
+### Netflix
 
-The model uses an **end-2025 retrospective baseline**, **2026–2030 explicit forecasts** and **2031 stable growth**. FY2025 financial statements and regional revenue are actual disclosures; memberships and ARM from 2025 onward are analyst estimates. The historical financial analysis retains the provider’s standardized series, with material differences from GAAP explained in the report.
+**Question.** How much cash flow can regional membership growth, monetization and operating leverage support after taxes and reinvestment?
 
-At the archived **9.8412% WACC** and **2.5% terminal growth**, the Base estimate is **$45.32 per share**. Bull and Bear operating cases, holding those valuation parameters fixed, are **$52.84** and **$32.46**. About **74.5%** of operating value comes from terminal value. These are assumption-dependent retrospective estimates; no current market-price recommendation is presented.
+**Approach.** Forecast regional revenue from average memberships and average monthly revenue per membership (ARM), then estimate consolidated operating profit, taxes and revenue-linked net operating investment. The 2030 driver extension and the original forecast tax paths are explicitly identified in the report.
 
-- [Excel model](models/Netflix_Valuation.xlsx) — open the Summary worksheet first.
-- [Analysis report](report/Netflix_Valuation_Report.md) — methods, formulas, accounting basis, assumptions and input references.
+**Interpretation.** The Base estimate is **$45.32 per share**. Terminal value contributes **74.5%** of operating value, so long-run profitability and investment assumptions materially affect the result. The model separates actual revenue from estimated operating drivers.
 
-The model retains the regional membership × ARM revenue framework, the original forecast tax-rate paths and the NOA-based FCFF approach. The 2030 extension is explicitly identified as an analyst assumption. Change WACC, terminal growth and the operating case on the Sensitivity worksheet.
+**Accounting considerations.** FY2025 financial statements and regional revenue are disclosed actuals; membership and ARM inputs from 2025 onward are analyst estimates. The provider's standardized historical series is retained, with material differences from GAAP explained. Content amortization and content investment require special care: PP&E purchases alone do not capture Netflix's content spending.
 
-## Warner Bros. Discovery
+### Warner Bros. Discovery
 
-WBD provides the leveraged media-transition case in this project. The model connects Streaming subscribers and annual ARPU, Studios growth, Networks revenue decline, Corporate costs and inter-segment eliminations to adjusted operating profit, investment and FCFF.
+**Question.** Can Streaming and Studios growth offset Networks decline and produce sufficient cash flow after reinvestment and financial claims?
 
-The **end-2025 retrospective baseline** uses actual FY2025 disclosures, **2026–2030 explicit forecasts** and **2031 stable growth**. The 2022 historical operating comparison uses pro forma combined figures; year-end balance sheets remain actual. Forecast taxes and D&A ratios retain the original analyst paths. Net operating investment remains EBITDA-linked, recalibrated to the corrected 2025 base. Future recurring SBC expense is estimated at **2.0136% of revenue**.
+**Approach.** Combine subscriber and annual-ARPU forecasts for Streaming with Studios growth, Networks revenue-line forecasts, Corporate costs and inter-segment eliminations. Estimate an operating-profit proxy from adjusted EBITDA after D&A and recurring SBC. Retain EBITDA-linked operating investment, recalibrated to the 2025 financial base. Estimated recurring SBC is **2.0136% of revenue**.
 
-At the archived **8.1842% WACC** and **2.0% terminal growth**, the default Base estimate is **$3.33 per share**. Bull and Bear operating scenarios give **$5.07** and **$4.03**, holding WACC, terminal growth and the SBC ratio fixed. Bear exceeds Base because the retained investment method implies greater asset release under weaker EBITDA; these are business scenarios, not an ordered valuation range. Higher terminal growth also reduces value under the low implied return on the model’s operating asset base. The report explains these limitations, including goodwill and other noncash accounting effects.
+**Interpretation.** The Base estimate is **$3.33 per share**, including current and noncurrent debt, finance leases, equity NCI and redeemable NCI. **Bear exceeds Base** because the retained investment method implies more asset release under weaker EBITDA. Higher terminal growth also lowers Base value when the implied return on operating assets is below WACC. These relationships expose the method's sensitivity; the scenarios are not an ordered valuation range.
 
-- [Excel model](models/WBD_Valuation.xlsx) — open Summary first.
-- [Analysis report](report/WBD_Valuation_Report.md) — formulas, assumptions, period definitions and input references.
+**Accounting considerations.** The 2022 operating comparison uses pro forma combined figures, while year-end balance sheets remain actual. Forecast operating profit is a normalized proxy, not GAAP EBIT. Goodwill, acquisition-related intangibles and noncash accounting changes limit how confidently EBITDA-linked NOA changes can be interpreted as cash investment or release.
 
-The estimate includes current and noncurrent debt, finance leases, equity NCI and redeemable NCI. It excludes acquisition synergies, transaction consideration and subsequent deal financing. It is not a current market-price recommendation.
+## Valuation Framework
 
-## Project Origin and Authorship
+The models follow a common sequence while retaining company-specific operating and accounting assumptions:
 
-The original project was a group assignment. I completed the original financial models and valuation calculations for Netflix, Paramount and Warner Bros. Discovery. This repository currently publishes the revised Paramount, Netflix and WBD models and analyses. Other group members' writing or presentation contributions are not represented as my work.
+1. Establish historical financial inputs and reporting scope.
+2. Forecast business drivers, revenue, expenses and operating taxes.
+3. Estimate net operating investment and FCFF.
+4. Discount five explicit cash flows and a normalized stable-period value.
+5. Adjust for included financial assets, debt and other claims to derive per-share value.
+6. Examine operating scenarios and valuation sensitivities.
 
-## Remaining Work
+The central investment identities are:
 
-- Develop the final cross-company comparison using clearly aligned periods, definitions and valuation assumptions.
+$$
+NOA_t = OperatingAssets_t - OperatingLiabilities_t
+$$
 
-The completed standalone models and reports for all three companies are included at this stage.
+$$
+FCFF_t = NOPAT_t - (NOA_t - NOA_{t-1})
+$$
+
+NOA is net operating assets; NOPAT is the model's after-tax operating-profit measure; FCFF is free cash flow to the firm. Increasing NOA represents estimated net investment and reduces FCFF. Because investment is estimated through NOA, a separate depreciation add-back and capex deduction are not appended to the same calculation. The reports explain the classifications and noncash effects that limit this approximation.
+
+Stable-period reinvestment is recalculated consistently with growth, rather than increasing only the terminal-value denominator's growth assumption. Detailed discounting, tax and equity-bridge formulas appear in each company report.
+
+## Data and Workbook Guide
+
+Inputs come from company annual reports, SEC filings, earnings releases and the original LSEG / Refinitiv Workspace exports. Each report's **Input References** identifies the relevant source definitions, dates and pages. WACC values are archived project snapshots, not current market measurements. Forecast business drivers and normalization choices are analyst estimates unless identified otherwise.
+
+The workbooks retain source-input sheets and distinguish them from historical analytical schedules, forecast assumptions and valuation calculations. Source exports may present years in descending order; analytical schedules use chronological years. Reported cash flow, standardized historical figures and model FCFF can differ in definition and should not be treated as interchangeable.
+
+Use **Summary** for the overview and **Sensitivity** for model controls and native Excel What-If Data Tables. Control locations and available scenarios differ by workbook and are documented in the reports. After changing inputs, ensure Excel recalculates the workbook and Data Tables.
+
+## Project Origin and Next Step
+
+Developed from a UC San Diego Financial Statement Analysis group project. **Jiarong Xu prepared the original financial models and valuation calculations for all three companies.** The original group project also included teammates' written analysis and presentation contributions. This repository presents the revised models and accompanying analytical reports.
+
+The next step is a cross-company synthesis of business drivers, cash conversion, leverage, investment assumptions and valuation sensitivity, with accounting differences stated explicitly.
