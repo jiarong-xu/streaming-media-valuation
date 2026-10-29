@@ -2,9 +2,9 @@
 
 **Jiarong Xu**
 
-Financial modeling and valuation of streaming and media businesses, with completed Paramount and Netflix analyses.
+Financial modeling and valuation of streaming and media businesses, with completed Paramount, Netflix and Warner Bros. Discovery analyses.
 
-This project studies how the transition to streaming affects traditional media businesses' operating performance, cash generation and valuation. Its intended scope covers Netflix, Paramount and Warner Bros. Discovery (WBD). The current published analyses cover **Paramount and Netflix**. The WBD analysis and the final cross-company comparison remain to be completed.
+This project studies how the transition to streaming affects traditional media businesses' operating performance, cash generation and valuation. Its intended scope covers Netflix, Paramount and Warner Bros. Discovery (WBD). The three standalone models and reports for **Paramount, Netflix and Warner Bros. Discovery (WBD)** are complete. The final cross-company comparison remains to be completed.
 
 ## Start Here
 
@@ -14,8 +14,10 @@ This project studies how the transition to streaming affects traditional media b
 | [Paramount analysis report](report/Paramount_Analysis_Report.md) | Business interpretation, assumptions, formulas, valuation results, limitations and input references. |
 | [Netflix valuation model](models/Netflix_Valuation.xlsx) | Regional revenue drivers, operating forecast, NOA-based FCFF, DCF and sensitivity analysis. |
 | [Netflix valuation report](report/Netflix_Valuation_Report.md) | Accounting basis, assumptions, formulas, results and input references. |
+| [WBD valuation model](models/WBD_Valuation.xlsx) | Segment forecasts, SBC, EBITDA-linked investment, FCFF, DCF and scenario sensitivities. |
+| [WBD valuation report](report/WBD_Valuation_Report.md) | Period definitions, assumptions, formulas, financial claims and method limitations. |
 
-Download either Excel model and open **Summary** first. For Paramount, **Business History** presents reported operating data and revenue reconciliations. **Assumptions** contains the operating paths. **Sensitivity** contains the model controls and native Excel What-If Data Tables. Those tables may require automatic calculation or manual recalculation after inputs change.
+Download an Excel model and open **Summary** first. For Paramount, **Business History** presents reported operating data and revenue reconciliations. **Assumptions** contains the operating paths. **Sensitivity** contains the model controls and native Excel What-If Data Tables. Those tables may require automatic calculation or manual recalculation after inputs change.
 
 ## Paramount: Scope and Results
 
@@ -66,13 +68,25 @@ At the archived **9.8412% WACC** and **2.5% terminal growth**, the Base estimate
 
 The model retains the regional membership × ARM revenue framework, the original forecast tax-rate paths and the NOA-based FCFF approach. The 2030 extension is explicitly identified as an analyst assumption. Change WACC, terminal growth and the operating case on the Sensitivity worksheet.
 
+## Warner Bros. Discovery
+
+WBD provides the leveraged media-transition case in this project. The model connects Streaming subscribers and annual ARPU, Studios growth, Networks revenue decline, Corporate costs and inter-segment eliminations to adjusted operating profit, investment and FCFF.
+
+The **end-2025 retrospective baseline** uses actual FY2025 disclosures, **2026–2030 explicit forecasts** and **2031 stable growth**. The 2022 historical operating comparison uses pro forma combined figures; year-end balance sheets remain actual. Forecast taxes and D&A ratios retain the original analyst paths. Net operating investment remains EBITDA-linked, recalibrated to the corrected 2025 base. Future recurring SBC expense is estimated at **2.0136% of revenue**.
+
+At the archived **8.1842% WACC** and **2.0% terminal growth**, the default Base estimate is **$3.33 per share**. Bull and Bear operating scenarios give **$5.07** and **$4.03**, holding WACC, terminal growth and the SBC ratio fixed. Bear exceeds Base because the retained investment method implies greater asset release under weaker EBITDA; these are business scenarios, not an ordered valuation range. Higher terminal growth also reduces value under the low implied return on the model’s operating asset base. The report explains these limitations, including goodwill and other noncash accounting effects.
+
+- [Excel model](models/WBD_Valuation.xlsx) — open Summary first.
+- [Analysis report](report/WBD_Valuation_Report.md) — formulas, assumptions, period definitions and input references.
+
+The estimate includes current and noncurrent debt, finance leases, equity NCI and redeemable NCI. It excludes acquisition synergies, transaction consideration and subsequent deal financing. It is not a current market-price recommendation.
+
 ## Project Origin and Authorship
 
-The original project was a group assignment. I completed the original financial models and valuation calculations for Netflix, Paramount and Warner Bros. Discovery. This repository currently publishes the revised Paramount and Netflix models and analyses. Other group members' writing or presentation contributions are not represented as my work.
+The original project was a group assignment. I completed the original financial models and valuation calculations for Netflix, Paramount and Warner Bros. Discovery. This repository currently publishes the revised Paramount, Netflix and WBD models and analyses. Other group members' writing or presentation contributions are not represented as my work.
 
 ## Remaining Work
 
-- Complete and publish the Warner Bros. Discovery analysis.
 - Develop the final cross-company comparison using clearly aligned periods, definitions and valuation assumptions.
 
-The completed Paramount and Netflix files are included at this stage.
+The completed standalone models and reports for all three companies are included at this stage.
