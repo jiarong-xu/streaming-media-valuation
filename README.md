@@ -6,7 +6,7 @@ How does the transition to streaming translate into cash generation and sharehol
 
 This project examines **Paramount, Netflix and Warner Bros. Discovery (WBD)** through historical financial analysis, business-driver forecasts and discounted cash flow valuation. Netflix provides a streaming-focused benchmark; Paramount and WBD combine streaming growth with film production and declining legacy television businesses.
 
-Each analysis connects a business question to an Excel model and a written explanation of its assumptions, formulas, results and limitations. The three company models and reports are complete. A final cross-company synthesis remains in development.
+Each analysis connects a business question to an Excel model and a written explanation of its assumptions, formulas, results and limitations. The three standalone company models, reports and cross-company comparison are complete.
 
 ## Explore the Project
 
@@ -15,6 +15,8 @@ Each analysis connects a business question to an Excel model and a written expla
 | Paramount | Can DTC growth offset legacy TV contraction while funding operating investment? | [Download model](models/Paramount_Valuation.xlsx) | [Read report](report/Paramount_Analysis_Report.md) |
 | Netflix | How do regional membership, monetization and operating leverage translate into free cash flow? | [Download model](models/Netflix_Valuation.xlsx) | [Read report](report/Netflix_Valuation_Report.md) |
 | Warner Bros. Discovery | Can Streaming and Studios offset Networks decline after investment and financial claims? | [Download model](models/WBD_Valuation.xlsx) | [Read report](report/WBD_Valuation_Report.md) |
+
+[Read the cross-company comparison](report/Streaming_Media_Comparison.md) for a synthesis of operating drivers, cash generation, leverage and valuation sensitivity.
 
 Start with a report for the analytical narrative, or download an Excel model and open **Summary** for its main inputs and outputs.
 
@@ -100,8 +102,8 @@ The workbooks retain source-input sheets and distinguish them from historical an
 
 Use **Summary** for the overview and **Sensitivity** for model controls and native Excel What-If Data Tables. Control locations and available scenarios differ by workbook and are documented in the reports. After changing inputs, ensure Excel recalculates the workbook and Data Tables.
 
-## Project Origin and Next Step
+## Project Origin
 
 Developed from a UC San Diego Financial Statement Analysis group project. **Jiarong Xu prepared the original financial models and valuation calculations for all three companies.** The original group project also included teammates' written analysis and presentation contributions. This repository presents the revised models and accompanying analytical reports.
 
-The next step is a cross-company synthesis of business drivers, cash conversion, leverage, investment assumptions and valuation sensitivity, with accounting differences stated explicitly.
+The [cross-company comparison](report/Streaming_Media_Comparison.md) brings together business drivers, cash conversion, leverage, investment assumptions and valuation sensitivity, while explaining the accounting and modelling differences that limit direct comparisons.
