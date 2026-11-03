@@ -112,9 +112,9 @@ These are composite revenue drivers. The model does not invent separately observ
 
 For each operating segment:
 
-$$
+```math
 SegmentAdjustedEBITDA=Revenue-Costs_{ex\ D\&A}-SG\&A
-$$
+```
 
 Percentages are first multiplied by revenue to obtain expense amounts. A cost ratio is not deducted directly as though it were a dollar expense. Historical 2025 Networks SG&A is **2,765**, matching the results release and giving segment adjusted EBITDA of **6,412**.
 
@@ -134,9 +134,9 @@ Thus 2026 elimination EBITDA is $-3,900-(-3,550)=-350$. Consolidated adjusted EB
 
 WBD adjusted EBITDA excludes more than depreciation. The model explicitly estimates recurring SBC rather than treating that excluded expense as costless:
 
-$$
-SBC\ ratio=\frac{751}{37,296}=2.0136\%
-$$
+```math
+SBC\ ratio=\frac{751}{37,296}\approx2.0136\%
+```
 
 $$
 SBC_t=Revenue_t\times SBC\ ratio
@@ -144,13 +144,13 @@ $$
 
 The numerator is the employee SBC adjustment excluded from the 2025 adjusted EBITDA reconciliation, not an assertion that total company-wide SBC disclosed elsewhere is exactly 751. The recurring ratio is a new analyst estimate. Forecast SBC remains an expense in this model; a second mechanical SBC cash-flow add-back is not applied.
 
-$$
+```math
 D\&A_t=AdjustedEBITDA_t\times d_t
-$$
+```
 
-$$
+```math
 OperatingProfitProxy_t=AdjustedEBITDA_t-D\&A_t-SBC_t
-$$
+```
 
 Base D&A ratios retain **48.5%, 47.5%, 46.5%, 45.5%, 44.5%**. The corrected 2025 historical ratio is approximately **65.0%**. Moving immediately to 48.5% therefore assumes a substantial normalization of amortization intensity; it is not a smooth continuation from the actual historical ratio. Content amortization already included in segment costs is not deducted a second time as an extra D&A line.
 
